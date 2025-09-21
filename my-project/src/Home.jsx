@@ -26,7 +26,7 @@ function Home() {
     }, {
         id: 3,
         title: "Building Scalable Node.js Applications",
-        author: "Emily Rodriguez",
+        author: "Lalitha",
         timeRead:" 6 min read",
         postedOn: "Nov 20, 2023",
         content: "Responsive web design is essential in today's mobile-first world. This guide will walk you through the principles of responsive design and how to implement them using CSS and modern frameworks.",
@@ -35,7 +35,7 @@ function Home() {
     }, {
         id: 4,
         title: "Building Scalable Node.js Applications",
-        author: "David Kim",
+        author: "Sai Kiran",
         timeRead:" 12 min read",
         postedOn: "2 days ago",
         content: "ES2021 introduces several new features that enhance the JavaScript language. In this article, we'll explore these features and how they can improve your code.",
@@ -44,7 +44,7 @@ function Home() {
     }, {
         id: 5,
         title: "Design Systems: A Complete Guide",
-        author: "Lisa Park",
+        author: "Sailaja",
         timeRead:" 10 min read",
         postedOn: "3days ago",
         content: "Flexbox is a powerful layout module in CSS that allows for flexible and responsive design. This article will guide you through the basics of Flexbox and how to use it effectively in your projects.",
@@ -53,7 +53,7 @@ function Home() {
     }, {
         id: 6,
         title: "Introduction to Machine Learning",
-        author:"Alex Thompson",
+        author:"Mohan",
         timeRead:" 15 min read",
         postedOn: "4 days ago",
         content: "TypeScript is a superset of JavaScript that adds static typing and other features to enhance developer productivity. This introduction will cover the basics of TypeScript and how to get started.",
@@ -64,7 +64,7 @@ function Home() {
     return (
         <div className="min-h-screen flex flex-col items-center pt-5 bg-gray-50">
             <p className="text-4xl font-bold">Welcome back, Dev Astra</p>
-            <p className="text-lg text-gray-500 mt-4"> Discover amazing stories, insights, and ideas from our community of writers.</p>
+            <p className="text-lg text-gray-500 mt-4 px-2"> Discover amazing stories, insights, and ideas from our community of writers.Sign into create your own posts and save your favorites.</p>
             <div className=" flex gap-10 justify-around mt-5 ">
                 <button className="px-10 py-4 cursor-pointer bg-blue-700 hover:bg-blue-900 shadow-md text-white rounded-md">Write a New Post</button>
                 <button className="px-10 py-4 cursor-pointer bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-md" >View My Posts</button>
@@ -74,7 +74,7 @@ function Home() {
                     posts.map((post) => (
                         <div className="w-96 bg-white shadow-lg rounded-lg" key={post.id}>
                             <div className="relative">
-                                <img className=" rounded-t-lg  shadow-lg h-52 w-96 " src={post.Image} alt="Writing" />
+                                <img className=" rounded-t-lg  shadow-lg h-52 w-96 transform transition-transform duration-300 hover:scale-105 " src={post.Image} alt="Writing" />
                                 <button className="p-3 text-sm bg-white rounded-full absolute cursor-pointer right-4 top-3">Save</button>
                             </div>
                             <div className="flex gap-5 mt-3 px-2">
